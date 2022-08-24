@@ -2,12 +2,13 @@
 learn how to package rpm software
 
 ## Env
-OpenEuler 22.03
+- OpenEuler 22.03
 ## 本地解压RPM
 ```
 rpm2cpio filename.rpm | cpio -div -D directory_name
 ```
 ## 打包
+- 整个过程参考[文档](https://rpm-packaging-guide.github.io/)
 - 在openEuler上打包
 ```dnf install gcc rpm-build rpm-devel rpmlint make python bash coreutils diffutils patch rpmdevtools
 ```
@@ -37,6 +38,7 @@ rpmbuild -bb cello.spec
 ```
 sudo dnf install ./*.rpm
 ```
+
 ## More 
 - https://src.fedoraproject.org/
 - https://rpm-packaging-guide.github.io/
